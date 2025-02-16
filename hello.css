@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("https://img.freepik.com/free-vector/flat-design-wildflower-heart-background_23-2150429858.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Center content */
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Question styling */
+#que {
+    background-color: pink;
+    padding: 20px;
+    font-size: 8vw; /* Adjusts size based on screen width */
+    border-radius: 10px;
+}
+
+/* Button container */
+#buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+/* Button styling */
+button {
+    background-color: black;
+    color: black;
+    font-size: 5vw;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+
+#no:hover {
+    transform: translateX(300px); 
+}
+
+
+@media (max-width: 600px) {
+    #que {
+        font-size: 6vw;
+    }
+
+    button {
+        font-size: 6vw;
+    }
+}
